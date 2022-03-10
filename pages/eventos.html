@@ -14,16 +14,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Markazi+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../style.css">
     <title>Eventos</title>
 </head>
 <body>
     <main class="principal_eventos">
-        <header class="logo">
+        <header class="logo wow animate__animated animate__zoomIn">
         <img id="arriba" src="../fotos/BOTERO1.png" alt="LOGO" class="logo">
         <h1 class="slogan">Ven y vive la mejor eperiencia de todo cumbres!</h1>
         </header>
-        <nav class="nav">
+        <nav class="nav wow animate__animated animate__zoomIn">
             <h2><a href="../index.html"><img src="../fotos/hogar.png" alt="boton de inicio" class="img_inicio"></a></h2>
             <ul>
                 <li><a href="../fotos/MENU.pdf">Menú</a></li>
@@ -32,25 +33,25 @@
                 <li><a href="../pages/about.html">Conócenos</a></li>
             </ul>
         </nav>
-            <p class="events_intro">Aquí encontraras un poco de infromación de los eventos, las actividades y promociones que manejamos semana tras semana sin falta! </p>
+            <p class="events_intro wow animate__animated animate__slideInUp">Aquí encontraras un poco de infromación de los eventos, las actividades y promociones que manejamos semana tras semana sin falta! </p>
         <fieldset class="eventos_eventos">
         <legend class="leyenda">EVENTOS</legend>
         <section class="eventos">
-            <div class="card"><img src="../fotos/martes.jpg" alt="martes"></div>
-            <div class="card"><img src="../fotos/miercoles.jpg" alt="miercoles"></div>
-            <div class="card"><img src="../fotos/jueves.jpg" alt="jueves"></div>
-            <div class="card"><img src="../fotos/viernes.jpg" alt="viernes"></div>
-            <div class="card"><img src="../fotos/sabado.jpg" alt="sabado"></div>
-            <div class="card"><img src="../fotos/domingo.jpg" alt="domingo"></div>
+            <div class="card wow animate__animated animate__slideInLeft"><img src="../fotos/martes.jpg" alt="martes"></div>
+            <div class="card wow animate__animated animate__slideInRight"><img src="../fotos/miercoles.jpg" alt="miercoles"></div>
+            <div class="card wow animate__animated animate__slideInLeft"><img src="../fotos/jueves.jpg" alt="jueves"></div>
+            <div class="card wow animate__animated animate__slideInRight"><img src="../fotos/viernes.jpg" alt="viernes"></div>
+            <div class="card wow animate__animated animate__slideInLeft"><img src="../fotos/sabado.jpg" alt="sabado"></div>
+            <div class="card wow animate__animated animate__slideInRight"><img src="../fotos/domingo.jpg" alt="domingo"></div>
         </section><br>
         </fieldset>
         <fieldset class="eventos_promos">
         <legend class="leyenda">PROMOCIONES SEMANALES</legend>
         <section class="promos">
-            <div class="card"><img src="../fotos/lunes.jpg" alt="lunes_promo"></div>
-            <div class="card"><img src="../fotos/martes_happyhour.jpg" alt="happy_hour"></div>
-            <div class="card"><img src="../fotos/miercoles_3x1.jpg" alt="miercoles3x1"></div>
-            <div class="card"><img src="../fotos/jueves_2x1.jpg" alt="jueves2x1"></div>
+            <div class="card wow animate__animated animate__slideInLeft"><img src="../fotos/lunes.jpg" alt="lunes_promo"></div>
+            <div class="card wow animate__animated animate__slideInRight"><img src="../fotos/martes_happyhour.jpg" alt="happy_hour"></div>
+            <div class="card animate__animated animate__slideInLeft"><img src="../fotos/miercoles_3x1.jpg" alt="miercoles3x1"></div>
+            <div class="card wow animate__animated animate__slideInRight"><img src="../fotos/jueves_2x1.jpg" alt="jueves2x1"></div>
         </section><br>
         </fieldset>
         <p class="events_extrainfo">*Los eventos especiales y promociones adicionales son publicados en nuestra pagina de facebook. Terminos y condiciones disponibles a traves de redes sociales y en nuestro establecimiento</p>
@@ -63,5 +64,9 @@
             <a href="#arriba">Ir arriba</a>
         </footer>
         </main>
+            <script src="../js/wow.min.js"></script>
+            <script>
+            new WOW().init();
+            </script>
 </body>
 </html>

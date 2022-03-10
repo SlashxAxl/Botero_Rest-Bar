@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Markazi+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../style.css">
 <head>
     <meta charset="UTF-8">
@@ -19,10 +20,11 @@
 </head>
 <body>
 <main class="principal_about">
-    <header class="logo">
+    <header class="logo wow animate__animated animate__zoomIn">
         <img id="arriba" src="../fotos/BOTERO1.png" alt="LOGO" class="logo">
+        <h1 class="slogan">Ven y vive la mejor eperiencia de todo cumbres!</h1>
     </header>
-    <nav class="nav">
+    <nav class="nav wow animate__animated animate__zoomIn">
         <h2><a href="../index.html"><img src="../fotos/hogar.png" alt="boton de inicio" class="img_inicio"></a></h2>
         <ul>
             <li><a href="../fotos/MENU.pdf">Menú</a></li>
@@ -32,7 +34,7 @@
         </ul>
     </nav>
     <div class="about">
-        <fieldset class="about_us">
+        <fieldset class="about_us wow animate__animated animate__slideInUp">
             <legend>SOBRE NOSOTROS</legend>
             Somos una empresa 100% mexicana que nació con el objetivo de satisfacer las necesidades gastronómicas de nuestros clientes ofreciendoles innovación en mixología y creando experiencias que los clientes puedan recordar con nostalgia. La base de nuestra marca esta en la calidad de alimentos, bebidas y servicios que sobrepasen la expectativa del cliente así como también buscamos el crecimiento y realización personal y laboral de nuestro personal y colaboradores. <br><br>
             
@@ -46,7 +48,7 @@
         </fieldset>
     </div>
     <div class="covid">
-        <fieldset class="covid_flyer">
+        <fieldset class="covid_flyer wow animate__animated animate__slideInUp">
             <legend>COVID-19</legend>
             Comprendemos la situación actual por la pandemia del SARS-CoV-2(COVID-19) y nos importa mucho la salud y seguridad de nuestros clientes por lo cual tomamos en cuenta las siguientes recomendaciones de la Secretaria de Salud y Protección Civil:
             <ul class="covid_list">
@@ -65,5 +67,9 @@
     <a href="#arriba">Ir arriba</a>
 </footer>
 </main>
+            <script src="../js/wow.min.js"></script>
+            <script>
+            new WOW().init();
+            </script>
 </body>
 </html>

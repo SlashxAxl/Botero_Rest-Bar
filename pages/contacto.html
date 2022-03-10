@@ -14,16 +14,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Markazi+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../style.css">
     <title>Reservaciones</title>
 </head>
 <body>
     <main class="principal_reservaciones">
-        <header class="logo">
+        <header class="logo wow animate__animated animate__zoomIn">
             <img id="arriba" src="../fotos/BOTERO1.png" alt="LOGO" class="logo">
             <h1 class="slogan">Ven y vive la mejor eperiencia de todo cumbres!</h1>
         </header>
-        <nav class="nav">
+        <nav class="nav wow animate__animated animate__zoomIn">
             <h2><a href="../index.html"><img src="../fotos/hogar.png" alt="boton de inicio" class="img_inicio"></a></h2>
             <ul>
                 <li><a href="../fotos/MENU.pdf">Menú</a></li>
@@ -32,9 +33,9 @@
                 <li><a href="../pages/about.html">Conócenos</a></li>
             </ul>
         </nav>
-        <h3 class="contacto_intro">¡¿Qué esperas?! contactanos por medio de esta pagina y realiza tu reservación. Recibiras algunas bebidas de cortesia y un descuento por un consumo minimo! No desaproveches esta oportunidad😉
+        <h3 class="contacto_intro wow animate__animated animate__slideInUp">¡¿Qué esperas?! contactanos por medio de esta pagina y realiza tu reservación. Recibiras algunas bebidas de cortesia y un descuento por un consumo minimo! No desaproveches esta oportunidad😉
         </h3>
-        <fieldset class="reservaciones">
+        <fieldset class="reservaciones wow animate__animated animate__fadeIn">
             <legend>Botero Rest-Bar</legend>
             <form class="formulario" action="">
                 <div>
@@ -126,7 +127,7 @@
                     <input type="reset" value="BORRAR" class="borrar">
             </form>
         </fieldset><br>
-        <p class="reserv_extrainfo">Si necesitas una mesa grande o si deseas organizar un evento con nosotros porfavor escribenos a nuestro whatsapp😁</p>
+        <p class="reserv_extrainfo wow animate__animated animate__fadeIn">Si necesitas una mesa grande o si deseas organizar un evento con nosotros porfavor escribenos a nuestro whatsapp😁</p>
     <footer class="footer"><hr>
         ¡Siguenos en nuestras redes! &nbsp;&nbsp;&nbsp;&nbsp;
         <img src="https://www.facebook.com/rsrc.php/yD/r/d4ZIVX-5C-b.ico" alt="facebook" width="20px">
@@ -136,5 +137,9 @@
         <a href="#arriba">Ir arriba</a>
     </footer>
     </main>
+            <script src="../js/wow.min.js"></script>
+            <script>
+            new WOW().init();
+            </script>
 </body>
 </html>
