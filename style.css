@@ -54,11 +54,6 @@ nav ul {
   justify-content: space-evenly;
   border-radius: 4px;
 }
-nav ul a {
-  text-decoration: none;
-  padding: 0.7rem;
-  display: block;
-}
 nav ul a:hover {
   background-color: azure;
   color: black;
