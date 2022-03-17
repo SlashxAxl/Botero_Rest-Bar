@@ -20,11 +20,12 @@
     <title>Reservaciones</title>
 </head>
 <body>
+    <header class="logo wow animate__animated animate__zoomIn">
+    <img id="arriba" src="../fotos/BOTERO1.png" alt="LOGO" class="logo">
+    <h1 class="slogan">Ven y vive la mejor experiencia de todo cumbres!</h1>
+    </header>
     <main class="principal_reservaciones">
-        <header class="logo wow animate__animated animate__zoomIn">
-            <img id="arriba" src="../fotos/BOTERO1.png" alt="LOGO" class="logo">
-            <h1 class="slogan">Ven y vive la mejor experiencia de todo cumbres!</h1>
-        </header>
+        
         <!--<nav class="nav wow animate__animated animate__zoomIn">
             <h2><a href="../index.html"><img src="../fotos/hogar.png" alt="boton de inicio" class="img_inicio"></a></h2>
             <ul>
@@ -34,6 +35,7 @@
                 <li><a href="../pages/about.html">Conócenos</a></li>
             </ul>
         </nav>-->
+        <div class="nav wow animate__animated animate__zoomIn">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex .justify-content-evenly col-12">
             <div class="container-fluid">
               <a class="navbar-brand" href="../index.html">Inicio</a>
@@ -64,31 +66,29 @@
               </div>
             </div>
           </nav>
+        </div>
         <h3 class="contacto_intro wow animate__animated animate__slideInUp">¡¿Qué esperas?! contactanos por medio de esta pagina y realiza tu reservación. Recibiras algunas bebidas de cortesia y un descuento por un consumo minimo! No desaproveches esta oportunidad😉
         </h3>
         <fieldset class="reservaciones wow animate__animated animate__fadeIn">
             <legend>Botero Rest-Bar</legend>
-            <form class="formulario" action="">
-                <div>
-                    <label for="nombre">Nombre(s)*</label>
-                    <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
-                </div><br>
-                <div>
-                    <label for="apellido">Apellido(s)*</label>
-                    <input type="text" name="apellido" placeholder="Escribe tu apellido" required>
-                </div><br>
-                <div>
-                    <label for="telefono">Telefono*</label>
-                    <input type="text" name="telefono" placeholder="000-0000-000" required>
-                </div><br>
-                <div>
-                    <label for="personas">Personas</label>
-                    <input type="text" name="personas" placeholder="Número de personas">
-                </div>
-                <div><br>
-                    <label for="mesa">Mesa</label>
-                    <select name="mesas" id="">
-                        <option value="--">-- --</option>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="nombres" placeholder="Nombres">
+                <label for="nombres">Nombre(s)</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="apellidos" placeholder="Apellidos">
+                <label for="apellidos">Apellido(s)</label>
+              </div><br>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                <label for="email">Email</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="personas" placeholder="Personas">
+                <label for="personas">Personas</label>
+              </div><br>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Selecciona una mesa</option>
                         <option value="A-1">A-1</option>
                         <option value="A-2">A-2</option>
                         <option value="A-3">A-3</option>
@@ -147,28 +147,26 @@
                         <option value="D-8">D-8</option>
                         <option value="D-9">D-9</option>
                         <option value="P-1">P-1</option>
-                    </select>
+              </select><br>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Deje un comentario" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Comentario</label>
+              </div>
+                <div class="d-grid gap-2 d-md-block">
+                  <button class="btn btn-primary" type="button">Enviar</button>
+                  <button class="btn btn-secondary" type="button">Borrar</button>
                 </div>
-                <div><br>
-                    <label for="comentario">Escribe un comentario</label><br>
-                    <textarea name="comentario" id="" cols="30" rows="10"></textarea>
-                </div>
-                    <input type="submit"
-                    value="ENVIAR" class="enviar">
-                    <input type="reset" value="BORRAR" class="borrar">
-            </form>
         </fieldset><br>
         <p class="reserv_extrainfo wow animate__animated animate__fadeIn">Si necesitas una mesa grande o si deseas organizar un evento con nosotros porfavor escribenos a nuestro whatsapp😁</p>
-    <footer class="footer"><hr>
-        ¡Siguenos en nuestras redes! &nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="https://www.facebook.com/rsrc.php/yD/r/d4ZIVX-5C-b.ico" alt="facebook" width="20px">
-        <a href="https://es-la.facebook.com/boterorestbar/">Botero Rest-Bar</a> &nbsp;&nbsp;&nbsp;
-        <img src="https://static.whatsapp.net/rsrc.php/v3/yP/r/rYZqPCBaG70.png" alt="whatsapp" width="20px">
-        <a href="https://www.whatsapp.com/?lang=es">0000-000-000</a> &nbsp;&nbsp;&nbsp;
-        <a href="#arriba">Ir arriba</a>
-    </footer>
     </main>
-    <script src="../bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+    <footer class="footer"><hr>
+      ¡Siguenos en nuestras redes! &nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="https://www.facebook.com/rsrc.php/yD/r/d4ZIVX-5C-b.ico" alt="facebook" width="20px">
+      <a href="https://es-la.facebook.com/boterorestbar/">Botero Rest-Bar</a> &nbsp;&nbsp;&nbsp;
+      <img src="https://static.whatsapp.net/rsrc.php/v3/yP/r/rYZqPCBaG70.png" alt="whatsapp" width="20px">
+      <a href="https://www.whatsapp.com/?lang=es">0000-000-000</a> &nbsp;&nbsp;&nbsp;
+    </footer>
+            <script src="../bootstrap-5.1.3-dist/js/bootstrap.js"></script>
             <script src="../js/wow.min.js"></script>
             <script>
             new WOW().init();
