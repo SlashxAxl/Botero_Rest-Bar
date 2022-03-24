@@ -1,0 +1,466 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*--------INDEX Y AJUSTES GENERALES--------*/
+.principal {
+  margin: 20px auto;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  gap: 4px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas: "logo logo" "nav nav" "espacio espacio_desc" "ubicacion ubicacion" "footer footer";
+}
+
+.logo {
+  width: 500px;
+  margin: 10px auto;
+  display: block;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: logo;
+}
+
+.slogan {
+  text-align: center;
+  font-size: 20px;
+}
+
+.img_inicio {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+body {
+  background-image: url(./fotos/2267674869_198160459191212_8163799643473178141_n.jpg);
+  background-color: #161515;
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 50px;
+  padding: 60px;
+}
+
+nav {
+  padding: 1rem;
+}
+
+nav ul {
+  background-color: cadetblue;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 4px;
+}
+
+nav ul a:hover {
+  background-color: burlywood;
+  color: black;
+  font-weight: bold;
+}
+
+footer a:link,
+a:active {
+  text-decoration: none;
+}
+
+header {
+  font-family: "Milonga", cursive;
+  color: azure;
+}
+
+h1 {
+  font-family: "Milonga", cursive;
+  color: azure;
+}
+
+main {
+  font-family: "Markazi Text", serif;
+  font-size: 25px;
+  color: azure;
+}
+
+.img_espacio {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.espacio_desc {
+  height: auto;
+  width: auto;
+  text-align: justify;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: espacio_desc;
+}
+
+.espacio {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: espacio;
+}
+
+.ubicanos {
+  font-size: 50px;
+  text-align: center;
+}
+
+.ad_info {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.mapa {
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+footer {
+  font-family: "Gruppo", cursive;
+  color: azure;
+  font-size: 20px;
+}
+
+.ubicacion {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: ubicacion;
+}
+
+.nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+}
+
+.footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+}
+
+/*------EVENTOS----------*/
+.principal_eventos {
+  margin: 20px auto;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[7];
+      grid-template-rows: repeat(7, auto);
+      grid-template-areas: "logo logo" "nav nav" "events_intro events_intro" "eventos_eventos eventos_eventos" "eventos_promos eventos_promos" "events_extrainfo events_extrainfo" "footer footer";
+}
+
+.events_intro {
+  font-size: 25px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: events_intro;
+}
+
+.events_extrainfo {
+  font-size: 25px;
+  font-style: italic;
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: events_extrainfo;
+}
+
+div.card {
+  width: 400px;
+  height: 300px;
+  opacity: 0.6;
+  border: 2px double #0fe090;
+}
+
+div.card img {
+  width: 396px;
+  height: 296px;
+}
+
+div.card:hover {
+  opacity: 1;
+  border: 2px double red;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+section.eventos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.promos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+fieldset {
+  border-style: inset;
+}
+
+.leyenda {
+  font-style: italic;
+}
+
+.eventos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.promos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.eventos_eventos {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: eventos_eventos;
+}
+
+.eventos_promos {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: eventos_promos;
+}
+
+/*--------CONTACTO-----------*/
+.principal_reservaciones {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas: "logo logo" "nav nav" "contacto_intro contacto_intro" "reservaciones reservaciones" "reserv_extrainfo reserv_extrainfo" "footer footer";
+  gap: 5px;
+}
+
+.reserv_extrainfo {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: reserv_extrainfo;
+}
+
+.contacto_intro {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: contacto_intro;
+}
+
+.reservaciones {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: reservaciones;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+/*--------ABOUT-----------*/
+.principal_about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas: "logo logo" "nav nav" "about about" "covid covid" "footer footer";
+}
+
+fieldset {
+  border-style: solid;
+}
+
+.about {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: about;
+}
+
+.covid {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: covid;
+}
+
+.covid_list {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+.covid_flyer {
+  margin: 10px;
+  padding: 10px;
+}
+
+.about_us {
+  margin: 10px;
+  padding: 10px;
+}
+
+/*---------MEDIA-----------------*/
+@media screen and (max-width: 320px) {
+  .principal {
+    margin: 10px auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (auto)[10];
+        grid-template-rows: repeat(10 auto);
+        grid-template-areas: "logo" "nav" "espacio" "espacio_desc" "ubicacion" "footer";
+  }
+  .principal_eventos {
+    margin: 10px auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (auto)[14];
+        grid-template-rows: repeat(14, auto);
+        grid-template-areas: "logo" "nav" "events_info" "eventos_eventos" "eventos_promos" "event_extrainfo" "footer";
+  }
+  .principal_reservaciones {
+    margin: 10px auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (auto)[8];
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: "logo" "nav" "contacto_intro" "reservaciones" "reserv_extrainfo" "footer";
+  }
+  .principal_about {
+    margin: 10px auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 10, auto;
+        grid-template-rows: 10, auto;
+        grid-template-areas: "logo" "nav" "about" "covid" "footer";
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .principal {
+    margin: 10px auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (auto)[10];
+        grid-template-rows: repeat(10 auto);
+        grid-template-areas: "logo" "nav" "espacio" "espacio_desc" "ubicacion" "footer";
+  }
+  .principal_eventos {
+    margin: 10px auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (auto)[14];
+        grid-template-rows: repeat(14, auto);
+        grid-template-areas: "logo" "nav" "events_intro" "eventos_eventos" "eventos_promos" "events_extrainfo" "footer";
+  }
+  .principal_reservaciones {
+    margin: 10px auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (auto)[8];
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: "logo" "nav" "contacto_intro" "reservaciones" "reserv_extrainfo" "footer";
+  }
+  .principal_about {
+    margin: 10px auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 10, auto;
+        grid-template-rows: 10, auto;
+        grid-template-areas: "logo" "nav" "about" "covid" "footer";
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .principal {
+    margin: 10px auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "logo" "nav" "espacio" "espacio_desc" "ubicacion" "footer";
+  }
+  .principal_eventos {
+    margin: 10px auto;
+    -ms-grid-columns: 1fr, 1fr;
+        grid-template-columns: 1fr, 1fr;
+    -ms-grid-rows: (auto)[7];
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas: "logo" "nav" "events_intro" "eventos_eventos" "eventos_promos" "events_extrainfo" "footer";
+  }
+  .principal_reservaciones {
+    margin: 10px auto;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "logo" "nav" "contacto_intro" "reservaciones" "reserv_extrainfo" "footer";
+  }
+  .principal_about {
+    margin: 10px auto;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 5, auto;
+        grid-template-rows: 5, auto;
+        grid-template-areas: "logo" "nav" "about" "covid" "footer";
+  }
+}
+/*# sourceMappingURL=style.css.map */
